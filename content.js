@@ -53,7 +53,7 @@
 			// (ex. 0:00 time when switching songs, didn't just unpause, didn't just skip, didn't just replay)
 			// Pandora.playTrack(); // global variables are NOT accessible to content script - use background scripts or reload page
 			// location.reload();
-            alert("Detected non-manual pause...");
+            log("Detected non-manual pause...");
 		}
 	}
 
