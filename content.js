@@ -22,7 +22,7 @@
     function dismissStillListening() {
         var popup = document.getElementsByClassName(CONST_PANDORA_STILL_LISTENING_CLASS).item(0);
         if (popup && popup.lastChild) {
-            alert("Detected Still Listening dialog...");
+            log("Detected Still Listening dialog");
             popup.lastChild.click();
         }
     }
