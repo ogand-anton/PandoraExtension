@@ -7,3 +7,7 @@ So, I decided to expand the small script into a Chrome extension.
 After that, I just kept adding functionality:
 * dedicated ad blocker to block ads, Google Analytics requests, tracking data and statistics, and anything else I did not like
 * automatically reloading the app if for some reason other than a manual pause it stops playing music
+
+Running TODO:
+* test that Still Listening dialog actually gets dismissed 
+* intercept media requests to download file and album art 
