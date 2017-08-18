@@ -1,11 +1,8 @@
-// Useful guide: https://robots.thoughtbot.com/how-to-make-a-chrome-extension
-// TODO
-// (1) reload/hit play if not playing for non-obvious reasons - DO WE NEED THIS WITH BLOCKED REQUESTS?
-(function() {	
+(function() {
 	var CONST_LOG_FLAG = true,
-		CONST_PANDORA_AD_SIDEBAR_CLASS = "DisplayAdController",
-		CONST_PANDORA_AD_SNIP_CLASS = "--rightRail",
-		CONST_PANDORA_APP_CLASS = "App",
+		// CONST_PANDORA_AD_SIDEBAR_CLASS = "DisplayAdController",
+		// CONST_PANDORA_AD_SNIP_CLASS = "--rightRail",
+		// CONST_PANDORA_APP_CLASS = "App",
 		CONST_PANDORA_PLAY_PAUSE_BUTTON_CLASS = "TunerControl PlayButton Tuner__Control__Button Tuner__Control__Play__Button",
 		CONST_PANDORA_PLAY_PAUSE_BUTTON_ATTR = "data-qa",
 		CONST_PANDORA_PLAY_ATTR_VAL = "play_button",
@@ -21,11 +18,12 @@
 		log("Starting Pandora Scripts");		
 		setInterval(run, CONST_POLL_RATE);
 	})();
-	
-	function dismissStillListening() {
-		var popup = document.getElementsByClassName(CONST_PANDORA_STILL_LISTENING_CLASS).item(0); 
-		if (popup && popup.lastChild) { 
-			popup.lastChild.click();
+
+    function dismissStillListening() {
+		var popup = document.getElementsByClassName(CONST_PANDORA_STILL_LISTENING_CLASS).item(0);
+		if (popup && popup.lastChild) {
+            alert("Detected Still Listening dialog...");
+            popup.lastChild.click();
 		}
 	}
 
@@ -46,7 +44,8 @@
 	function log(str) {
 		if (CONST_LOG_FLAG) { console.log(str) }
 	}
-	
+
+    // TODO reload/hit play if not playing for non-obvious reasons
 	function reloadIfNotPlaying() {
 		if (isPaused() && !manualPauseFlag) {
 			// for now depend on easy way to continue playing 
@@ -54,37 +53,37 @@
 			// (ex. 0:00 time when switching songs, didn't just unpause, didn't just skip, didn't just replay)
 			// Pandora.playTrack(); // global variables are NOT accessible to content script - use background scripts or reload page
 			// location.reload();
+            alert("Detected non-manual pause...");
 		}
 	}
-	
-	function removeAds() {
-		// no longer "removes" adds as requests are blocked by background scripts
-		// display seems to fix itself when no ads loaded (probs because js files not loaded for ads any more)
-		// remove main sidebar
-		var appElem = document.getElementsByClassName(CONST_PANDORA_APP_CLASS).item(0),
-			adSidebar = document.getElementsByClassName(CONST_PANDORA_AD_SIDEBAR_CLASS).item(0);
-	
-		if (appElem && adSidebar) { appElem.removeChild(adSidebar) }
-	
-		// fix display 
-		var elemArr = document.querySelectorAll("[class$='" + CONST_PANDORA_AD_SNIP_CLASS + "']");
-		for (var i = 0; i < elemArr.length; i++) {
-			var elem = elemArr.item(i);
-			
-			if (elem.className.animVal && elem.className.baseVal) {
-				elem.className.baseVal = elem.className.baseVal.replace(CONST_PANDORA_AD_SNIP_CLASS, "");
-				elem.className.animVal = elem.className.animVal.replace(CONST_PANDORA_AD_SNIP_CLASS, "");
-			} else {
-				elem.className = elem.className.replace(CONST_PANDORA_AD_SNIP_CLASS, "");
-			}
-		}
-	}
+
+	// function removeAds() {
+	// 	// no longer "removes" adds as requests are blocked by background scripts
+	// 	// display seems to fix itself when no ads loaded (probs because js files not loaded for ads any more)
+	// 	// remove main sidebar
+	// 	var appElem = document.getElementsByClassName(CONST_PANDORA_APP_CLASS).item(0),
+	// 		adSidebar = document.getElementsByClassName(CONST_PANDORA_AD_SIDEBAR_CLASS).item(0);
+    //
+	// 	if (appElem && adSidebar) { appElem.removeChild(adSidebar) }
+    //
+	// 	// fix display
+	// 	var elemArr = document.querySelectorAll("[class$='" + CONST_PANDORA_AD_SNIP_CLASS + "']");
+	// 	for (var i = 0; i < elemArr.length; i++) {
+	// 		var elem = elemArr.item(i);
+    //
+	// 		if (elem.className.animVal && elem.className.baseVal) {
+	// 			elem.className.baseVal = elem.className.baseVal.replace(CONST_PANDORA_AD_SNIP_CLASS, "");
+	// 			elem.className.animVal = elem.className.animVal.replace(CONST_PANDORA_AD_SNIP_CLASS, "");
+	// 		} else {
+	// 			elem.className = elem.className.replace(CONST_PANDORA_AD_SNIP_CLASS, "");
+	// 		}
+	// 	}
+	// }
 	
 	function run() {
 		if (loadedFlag) {
-			//removeAds();
 			setListeners();
-			// dismissStillListening(); disabling this for now to test if appears
+            dismissStillListening();
 			reloadIfNotPlaying();
 		} else {
 			loadedFlag = isPlaying();
