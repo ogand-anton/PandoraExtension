@@ -5,5 +5,5 @@ I always have Pandora running. So the periodic messsages of whether I am or am n
 So, I decided to expand the small script into a Chrome extension. 
 
 After that, I just kept adding functionality:
-* dedicated ad blocker to block ads, Google Analytics requests, tracking data and statistics, and anything else I did not like,
+* dedicated ad blocker to block ads, Google Analytics requests, tracking data and statistics, and anything else I did not like
 * automatically reloading the app if for some reason other than a manual pause it stops playing music
