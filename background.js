@@ -31,17 +31,17 @@
             "https://www.youtube.com/*"
         ],
         whiteListedUrls = [
-            // "https://www.pandora.com/ping.txt*", 			        // needed for network connection detection
-            // "https://www.pandora.com/*analytics*", 			        // needed to load
-            // "https://www.pandora.com/*smartconversion*",		        // needed to load
+            // "https://www.pandora.com/ping.txt*",                     // needed for network connection detection
+            // "https://www.pandora.com/*analytics*",                   // needed to load
+            // "https://www.pandora.com/*smartconversion*",             // needed to load
             "https://www.pandora.com/*/ad/startValueExchange*",         // needed for replays
             "https://www.pandora.com/*/ad/useReplayReward*",            // needed for replays
             "https://www.pandora.com/*/ad/useSkipReward*",              // needed for skips,
             "https://www.pandora.com/*/adsCommon-index-js*",            // needed to load
             "https://www.pandora.com/*/d_adsCommon-index-js*",          // needed to load
-            "https://www.pandora.com/*/d_audio-ads*",					// needed to load
-            "https://www.pandora.com/*/d_ads-common*",					// needed to load
-            "https://www.pandora.com/*/d_display-ads*",					// needed to load
+            "https://www.pandora.com/*/d_audio-ads*",                   // needed to load
+            "https://www.pandora.com/*/d_ads-common*",                  // needed to load
+            "https://www.pandora.com/*/d_display-ads*",                 // needed to load
             "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
             "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
             "https://www.pandora.com/web-version/*/d_video-ads*"        // needed for skips
