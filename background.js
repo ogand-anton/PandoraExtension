@@ -23,7 +23,7 @@
             "https://www.pandora.com/*ads*",
             "https://www.pandora.com/*brokenAd*",
             "https://www.pandora.com/*getAdList*",
-            "https://www.pandora.com/*.mp4",						// video ads
+            "https://www.pandora.com/*.mp4",                        // video ads
             "https://www.pandora.com/*mediaserverPublicRedirect*", 	// redirects to ad retrievals
             "https://www.pandora.com/*radioAdEmbedGPT*",
             "https://www.pandora.com/*registerImpression*",
