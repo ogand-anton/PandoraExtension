@@ -39,9 +39,9 @@
             "https://www.pandora.com/*/ad/useSkipReward*",              // needed for skips,
             "https://www.pandora.com/*/adsCommon-index-js*",            // needed to load
             "https://www.pandora.com/*/d_adsCommon-index-js*",          // needed to load
-			"https://www.pandora.com/*/d_audio-ads*",					// needed to load
-			"https://www.pandora.com/*/d_ads-common*",					// needed to load
-			"https://www.pandora.com/*/d_display-ads*",					// needed to load
+            "https://www.pandora.com/*/d_audio-ads*",					// needed to load
+            "https://www.pandora.com/*/d_ads-common*",					// needed to load
+            "https://www.pandora.com/*/d_display-ads*",					// needed to load
             "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
             "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
             "https://www.pandora.com/web-version/*/d_video-ads*"        // needed for skips
