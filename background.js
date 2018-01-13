@@ -18,6 +18,7 @@
             "https://stats.pandora.com/*",
             "https://www.google.com/ads*",
             "https://www.googleadservices.com/*",
+            "https://googleads.g.doubleclick.net/*",
             "https://www.google-analytics.com/*",
             "https://www.pandora.com/*ads*",
             "https://www.pandora.com/*brokenAd*",
@@ -26,7 +27,8 @@
             "https://www.pandora.com/*mediaserverPublicRedirect*", 	// redirects to ad retrievals
             "https://www.pandora.com/*radioAdEmbedGPT*",
             "https://www.pandora.com/*registerImpression*",
-            "https://www.pandora.com/*/ad/*"
+            "https://www.pandora.com/*/ad/*",
+            "https://www.youtube.com/*"
         ],
         whiteListedUrls = [
             // "https://www.pandora.com/ping.txt*", 			        // needed for network connection detection
@@ -41,7 +43,8 @@
 			"https://www.pandora.com/*/d_ads-common*",					// needed to load
 			"https://www.pandora.com/*/d_display-ads*",					// needed to load
             "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
-            "https://adserver.pandora.com/*?slot=FLEX_REPLAY*"          // needed for skips
+            "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
+            "https://www.pandora.com/web-version/*/d_video-ads*"        // needed for skips
         ];
 
     (function init() {
