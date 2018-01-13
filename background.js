@@ -27,8 +27,7 @@
             "https://www.pandora.com/*mediaserverPublicRedirect*",  // redirects to ad retrievals
             "https://www.pandora.com/*radioAdEmbedGPT*",
             "https://www.pandora.com/*registerImpression*",
-            "https://www.pandora.com/*/ad/*",
-            "https://www.youtube.com/*"
+            "https://www.pandora.com/*/ad/*"
         ],
         whiteListedUrls = [
             // "https://www.pandora.com/ping.txt*",                     // needed for network connection detection
