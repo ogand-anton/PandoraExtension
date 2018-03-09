@@ -110,6 +110,7 @@
                 button.addEventListener("click", setManualPauseFlag)
             }
             document.addEventListener("keydown", setManualPauseFlagOnSpace)
+            listenerSetFlag = true;
         }
     }
 
