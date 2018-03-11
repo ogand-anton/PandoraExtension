@@ -1,6 +1,7 @@
 // TODO
 // (1) download music & album covers
 (function () {
+	// urls that may need to be blocked
     var blackListedUrls = [
             "http://adserver.pandora.com/*",
             "https://adserver.pandora.com/*",
@@ -33,6 +34,7 @@
             "https://www.pandora.com/*registerImpression*",
             "https://www.pandora.com/*/ad/*"
         ],
+		// urls that are an exception to the blacklist
         whiteListedUrls = [
             "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
             "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
@@ -50,11 +52,8 @@
             "https://www.pandora.com/*/d_ads-common*",                  // needed to load
             "https://www.pandora.com/*/d_display-ads*",                 // needed to load
             "https://www.pandora.com/*/d_video-ads*"                    // needed for skips
-        ],
-		runOnUrls = [
-			"http"
-		];
-
+        ];
+		
     (function init() {
         run();
     })();
