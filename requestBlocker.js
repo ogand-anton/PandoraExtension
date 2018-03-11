@@ -1,7 +1,7 @@
 // TODO
 // (1) download music & album covers
 (function () {
-	// urls that may need to be blocked
+    // urls that may need to be blocked
     var blackListedUrls = [
             "http://adserver.pandora.com/*",
             "https://adserver.pandora.com/*",
@@ -34,7 +34,7 @@
             "https://www.pandora.com/*registerImpression*",
             "https://www.pandora.com/*/ad/*"
         ],
-		// urls that are an exception to the blacklist
+        // urls that are an exception to the blacklist
         whiteListedUrls = [
             "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
             "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
@@ -59,7 +59,7 @@
     })();
 
     function blockRequest(request) {
-		console.log("Blocking " + request.url)
+        console.log("Blocking " + request.url)
         return  {cancel: !checkUrlWhiteListed(request.url)};
     }
 
@@ -87,8 +87,8 @@
             ["blocking"]
         );
 		
-		chrome.browserAction.onClicked.addListener(function(activeTab){
-		  chrome.tabs.create({ url: "chrome://extensions" });
-		});
+        chrome.browserAction.onClicked.addListener(function(activeTab){
+            chrome.tabs.create({ url: "chrome://extensions" });
+        });
     }
 })();
