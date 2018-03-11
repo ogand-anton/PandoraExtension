@@ -8,5 +8,8 @@ After that, I just kept adding functionality:
 * dedicated ad blocker to block ads, Google Analytics requests, tracking data and statistics, and anything else I did not like
 * automatically reloading the app if for some reason other than a manual pause it stops playing music
 
+NOTE:
+The request blocking functionality is run in a background script; in other words, it always runs, regardless of what page you are accessing. In some way, this Chrome extension also servers as a custom, albeit baby, ad/tracker/request blocker.
+
 Running TODO:
 * intercept media requests to download file and album art

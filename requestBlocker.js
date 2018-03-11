@@ -31,8 +31,7 @@
             "https://www.pandora.com/*mediaserverPublicRedirect*",  // redirects to ad retrievals
             "https://www.pandora.com/*radioAdEmbedGPT*",
             "https://www.pandora.com/*registerImpression*",
-            "https://www.pandora.com/*/ad/*",
-            "https://www.youtube.com/*"
+            "https://www.pandora.com/*/ad/*"
         ],
         whiteListedUrls = [
             "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
@@ -51,13 +50,17 @@
             "https://www.pandora.com/*/d_ads-common*",                  // needed to load
             "https://www.pandora.com/*/d_display-ads*",                 // needed to load
             "https://www.pandora.com/*/d_video-ads*"                    // needed for skips
-        ];
+        ],
+		runOnUrls = [
+			"http"
+		];
 
     (function init() {
         run();
     })();
 
     function blockRequest(request) {
+		console.log("Blocking " + request.url)
         return  {cancel: !checkUrlWhiteListed(request.url)};
     }
 
