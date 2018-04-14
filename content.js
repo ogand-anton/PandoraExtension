@@ -8,7 +8,7 @@
         CONST_PANDORA_PLAY_ATTR_VAL = "play_button",
         CONST_PANDORA_PAUSE_ATTR_VAL = "pause_button",
         CONST_PANDORA_STILL_LISTENING_CLASS = "StillListeningBody",
-        CONST_POLL_RATE = 1000;
+        CONST_POLL_RATE = 1250;
 
     var loadedFlag = false,
         listenerSetFlag = false,

@@ -4,6 +4,7 @@
     // urls that may need to be blocked
     var blackListedUrls = [
             "http://adserver.pandora.com/*",
+			"https://ad.doubleclick.net/*",
             "https://adserver.pandora.com/*",
             "https://bat.bing.com/*",
             "https://beacon.krxd.net/*",
