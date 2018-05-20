@@ -23,6 +23,7 @@
             "https://s.adroll.com/*",
             "https://s0.2mdn.net/*",
             "https://sb.scorecardresearch.com/*",
+			"https://serve.truex.com/*",
 			"https://stags.bluekai.com/*",
 			"https://static.adsafeprotected.com/*",
             "https://stats.pandora.com/*",
