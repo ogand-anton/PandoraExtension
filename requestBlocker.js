@@ -75,7 +75,9 @@
             "https://www.pandora.com/*/d_audio-ads*",                   // needed to load
             "https://www.pandora.com/*/d_ads-common*",                  // needed to load
             "https://www.pandora.com/*/d_display-ads*",                 // needed to load
-            "https://www.pandora.com/*/d_video-ads*"                    // needed for skips
+            "https://www.pandora.com/*/d_video-ads*",                    // needed for skips
+			"https://www.youtube.com/service_ajax?name=signalServiceEndpoint*",		// needed to switch account
+			"https://www.youtube.com/service_ajax?name=getAccountsListEndpoint*"	// needed to switch account
         ];
 		
     (function init() {
