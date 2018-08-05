@@ -50,6 +50,7 @@
 			"https://www.youtube.com/*adcompanion*",
 			"https://www.youtube.com/csi*",
 			"https://www.youtube.com/error_204*",
+			"https://www.youtube.com/get_midroll_info*",
 			"https://www.youtube.com/*/log_event*",
 			"https://www.youtube.com/*/log_interaction*",
 			"https://www.youtube.com/pagead/*",
@@ -77,7 +78,8 @@
             "https://www.pandora.com/*/d_display-ads*",                 // needed to load
             "https://www.pandora.com/*/d_video-ads*",                    // needed for skips
 			"https://www.youtube.com/service_ajax?name=signalServiceEndpoint*",		// needed to switch account
-			"https://www.youtube.com/service_ajax?name=getAccountsListEndpoint*"	// needed to switch account
+			"https://www.youtube.com/service_ajax?name=getAccountsListEndpoint*",	// needed to switch account
+			"https://www.youtube.com/service_ajax?name=subscribeEndpoint"			// needed to subscribe 
         ];
 		
     (function init() {
