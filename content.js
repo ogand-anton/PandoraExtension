@@ -8,6 +8,8 @@
         CONST_PANDORA_PLAY_ATTR_VAL = "play_button",
         CONST_PANDORA_PAUSE_ATTR_VAL = "pause_button",
         CONST_PANDORA_STILL_LISTENING_CLASS = "StillListeningBody",
+		CONST_PANDORA_AD_BLOCKER_POPUP_CLASS = "Modal__container__buttons",
+		CONST_PANDORA_AD_BLOCKER_POPUP_HREF = "https://help.pandora.com/s/article/How-to-Whitelist-Pandora-with-your-Ad-Blocker",
         CONST_POLL_RATE = 1250;
 
     var loadedFlag = false,
@@ -21,10 +23,24 @@
 
     function dismissStillListening() {
         var popup = document.getElementsByClassName(CONST_PANDORA_STILL_LISTENING_CLASS).item(0);
-        if (popup && popup.lastChild) {
+        if (popup && popup.lastChild && popup.lastChild.lastChild) {
             log("Detected Still Listening dialog");
+            popup.lastChild.lastChild.click();
+        }
+		else {
+			log("No Still Listening dialog detected...");
+		}
+    }
+	
+	function dismissAdBlockerPopup() {
+        var popup = document.getElementsByClassName(CONST_PANDORA_AD_BLOCKER_POPUP_CLASS).item(0);
+        if (popup && popup.firstChild && popup.firstChild.href == CONST_PANDORA_AD_BLOCKER_POPUP_HREF && popup.lastChild) {
+            log("Detected Ad Blocker Popup dialog");
             popup.lastChild.click();
         }
+		else {
+			log("No Ad Blocker Popup dialog detected...");
+		}
     }
 
     function findPlayPauseButton() {
@@ -93,10 +109,11 @@
 
     function run() {
         if (loadedFlag) {
-            setListeners();
+            //setListeners();
             fixAdLessDisplay();
             dismissStillListening();
-            reloadIfNotPlaying();
+			dismissAdBlockerPopup();
+            //reloadIfNotPlaying();
         } else {
             loadedFlag = isPlaying();
             log("Pandora " + (loadedFlag ? "loaded!" : "loading..."));

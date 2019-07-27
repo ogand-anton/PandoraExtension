@@ -7,12 +7,15 @@
 			"http://www.dianomi.com/*",
 			"https://ad.doubleclick.net/*",
             "https://adserver.pandora.com/*",
+			"https://assets.adobedtm.com/*",
             "https://bat.bing.com/*",
             "https://beacon.krxd.net/*",
+			"https://*.cloudfront.net/v4/bugsnag.min.js",
             "https://cache-ssl.celtra.com/*",
             "https://cdn.krxd.net/*",
             "https://connect.facebook.net/*",
             "https://delivery-cdn-cf.adswizz.com/*",
+			"https://doubleclick.net/*",
             "https://googleads.g.doubleclick.net/*",
 			"https://*.googlesyndication.com/*",
             "https://imasdk.googleapis.com/*",
@@ -39,11 +42,14 @@
             "https://www.googletagservices.com/*",
             "https://www.pandora.com/*ads*",
             "https://www.pandora.com/*brokenAd*",
+			//"https://www.pandora.com/*displayAdFrame*",
             "https://www.pandora.com/*getAdList*",
             "https://www.pandora.com/*.mp4",                        // video ads
             "https://www.pandora.com/*mediaserverPublicRedirect*",  // redirects to ad retrievals
+			//"https://www.pandora.com/*/playbackPaused*",
             "https://www.pandora.com/*radioAdEmbedGPT*",
             "https://www.pandora.com/*registerImpression*",
+			"https://www.pandora.com/*smart_launch_hooks_android*",
             "https://www.pandora.com/*/ad/*",
 			"https://www.youtube.com/*/ads*",
 			"https://www.youtube.com/*ad_companion*",
@@ -79,7 +85,8 @@
             "https://www.pandora.com/*/d_video-ads*",                    // needed for skips
 			"https://www.youtube.com/service_ajax?name=signalServiceEndpoint*",		// needed to switch account
 			"https://www.youtube.com/service_ajax?name=getAccountsListEndpoint*",	// needed to switch account
-			"https://www.youtube.com/service_ajax?name=subscribeEndpoint"			// needed to subscribe 
+			"https://www.youtube.com/service_ajax?name=subscribeEndpoint",			// needed to subscribe 
+			"https://www.youtube.com/service_ajax?name=unsubscribeEndpoint"			// needed to unsubscribe 
         ];
 		
     (function init() {
@@ -87,8 +94,9 @@
     })();
 
     function blockRequest(request) {
-        console.log("Blocking " + request.url)
-        return  {cancel: !checkUrlWhiteListed(request.url)};
+		var cancelFlag = !checkUrlWhiteListed(request.url);
+        console.log(cancelFlag ? "Blocking " + request.url : "Allowing " + request.url);
+        return  {cancel: cancelFlag};
     }
 
     function checkUrlPatternMatches(url, pattern) {
@@ -118,5 +126,9 @@
         chrome.browserAction.onClicked.addListener(function(activeTab){
             chrome.tabs.create({ url: "chrome://extensions" });
         });
+		
+		chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
+			chrome.tabs.executeScript(null,{file:"content.js"});
+		});
     }
 })();
