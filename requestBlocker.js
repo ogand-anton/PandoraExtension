@@ -76,6 +76,7 @@
             "https://www.pandora.com/*/ad/useReplayReward*",            // needed for replays
             "https://www.pandora.com/*/ad/useSkipReward*",              // needed for skips,
             "https://www.pandora.com/*/adsCommon-index-js*",            // needed to load
+			"https://www.pandora.com/*/ads.json",						// needed to bypass ad-blocker check
             //"https://www.pandora.com/*/c_*",                          // needed to load (?)
             //"https://www.pandora.com/*/d_*",                          // needed to load (?)
             "https://www.pandora.com/*/d_adsCommon-index-js*",          // needed to load
