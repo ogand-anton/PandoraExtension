@@ -63,7 +63,8 @@
 			"https://www.youtube.com/ptracking*",
 			"https://www.youtube.com/*/stats/*",
 			"https://www.youtube.com/service_ajax*",
-			"https://www.youtube.com/sw.js*"
+			"https://www.youtube.com/sw.js*",
+			"https://www.youtube.com/get_video_info*"
         ],
         // urls that are an exception to the blacklist
         whiteListedUrls = [
