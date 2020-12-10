@@ -43,7 +43,7 @@
             "https://www.pandora.com/*ads*",
             "https://www.pandora.com/*brokenAd*",
 			//"https://www.pandora.com/*displayAdFrame*",
-            "https://www.pandora.com/*getAdList*",
+            //"https://www.pandora.com/*getAdList*",
             "https://www.pandora.com/*.mp4",                        // video ads
             "https://www.pandora.com/*mediaserverPublicRedirect*",  // redirects to ad retrievals
 			//"https://www.pandora.com/*/playbackPaused*",
@@ -72,6 +72,7 @@
             "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
             // "https://www.pandora.com/ping.txt*",                     // needed for network connection detection
             // "https://www.pandora.com/*analytics*",                   // needed to load
+	    "https://www.pandora.com/*getAdList*",			// needed because playback is paused if doesn't load		
             // "https://www.pandora.com/*smartconversion*",             // needed to load
             "https://www.pandora.com/*/ad/startValueExchange*",         // needed for replays
             "https://www.pandora.com/*/ad/useReplayReward*",            // needed for replays
