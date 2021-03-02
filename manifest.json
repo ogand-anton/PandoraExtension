@@ -5,7 +5,7 @@
   "background": {"scripts": ["requestBlocker.js"]},
   "browser_action": {"default_icon": "icon.png"},
   "content_scripts": [
-	{"matches": ["https://www.pandora.com/*"], "js": ["content.js"]},
+	{"matches": ["https://www.pandora.com/*"], "js": ["contentPandora.js"]},
 	{"matches": ["https://www.youtube.com/*"], "js": ["contentYouTube.js"]}
   ],
   "permissions": ["webRequest", "webRequestBlocking", "<all_urls>", "tabs", "webNavigation"]

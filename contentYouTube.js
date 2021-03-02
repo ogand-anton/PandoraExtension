@@ -1,7 +1,7 @@
 (function () {
     var CONST_LOG_FLAG = true,
         CONST_YOUTUBE_SKIP_ADD_CLASS = "ytp-ad-text ytp-ad-skip-button-text",
-        CONST_POLL_RATE = 1250;
+        CONST_POLL_RATE = 1000;
 
     var loadedFlag = false,
         listenerSetFlag = false,
@@ -16,12 +16,9 @@
     function clickSkipAdd() {
         var popup = document.getElementsByClassName(CONST_YOUTUBE_SKIP_ADD_CLASS).item(0);
         if (popup) {
-            log("Detected Still Listening dialog");
+            log("Detected Skip Ad button");
             popup.click();
         }
-		else {
-			log("No Still Listening dialog detected...");
-		}
     }
 
     function log(str, alertFlag) {
