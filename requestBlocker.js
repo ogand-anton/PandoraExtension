@@ -64,7 +64,8 @@
 			"https://www.youtube.com/*/stats/*",
 			"https://www.youtube.com/service_ajax*",
 			"https://www.youtube.com/sw.js*",
-			"https://www.youtube.com/get_video_info*"
+			"https://www.youtube.com/get_video_info*",
+			"https://www.youtube.com/youtubei/v1/player/ad_break*"
         ],
         // urls that are an exception to the blacklist
         whiteListedUrls = [
