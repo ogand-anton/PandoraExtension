@@ -1,7 +1,6 @@
 (function () {
     var CONST_LOG_FLAG = true,
         CONST_YOUTUBE_SKIP_AD_CLASS = "ytp-ad-text ytp-ad-skip-button-text",
-        CONST_YOUTUBE_PREVIEW_AD_CLASS = "ytp-ad-text ytp-ad-preview-text",
         CONST_YOUTUBE_CLOSE_AD_CLASS = "ytp-ad-overlay-close-button",
         CONST_POLL_RATE = 1000;
 
@@ -20,12 +19,6 @@
         if (popup) {
             log("Detected Skip Ad button");
             popup.click();
-        }
-        
-	var popup2 = document.getElementsByClassName(CONST_YOUTUBE_PREVIEW_AD_CLASS).item(0);
-        if (popup2) {
-            log("Detected Preview Ad button");
-            popup2.click();
         }
     }
 
