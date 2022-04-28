@@ -69,27 +69,28 @@
         ],
         // urls that are an exception to the blacklist
         whiteListedUrls = [
-            "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           // needed for skips
-            "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         // needed for skips
-            // "https://www.pandora.com/ping.txt*",                     // needed for network connection detection
-            // "https://www.pandora.com/*analytics*",                   // needed to load
-            // "https://www.pandora.com/*smartconversion*",             // needed to load
-            "https://www.pandora.com/*/ad/startValueExchange*",         // needed for replays
-            "https://www.pandora.com/*/ad/useReplayReward*",            // needed for replays
-            "https://www.pandora.com/*/ad/useSkipReward*",              // needed for skips,
-            "https://www.pandora.com/*/adsCommon-index-js*",            // needed to load
-			"https://www.pandora.com/*/ads.json",						// needed to bypass ad-blocker check
-            //"https://www.pandora.com/*/c_*",                          // needed to load (?)
-            //"https://www.pandora.com/*/d_*",                          // needed to load (?)
-            "https://www.pandora.com/*/d_adsCommon-index-js*",          // needed to load
-            "https://www.pandora.com/*/d_audio-ads*",                   // needed to load
-            "https://www.pandora.com/*/d_ads-common*",                  // needed to load
-            "https://www.pandora.com/*/d_display-ads*",                 // needed to load
-            "https://www.pandora.com/*/d_video-ads*",                    // needed for skips
-			"https://www.youtube.com/service_ajax?name=signalServiceEndpoint*",		// needed to switch account
-			"https://www.youtube.com/service_ajax?name=getAccountsListEndpoint*",	// needed to switch account
-			"https://www.youtube.com/service_ajax?name=subscribeEndpoint",			// needed to subscribe 
-			"https://www.youtube.com/service_ajax?name=unsubscribeEndpoint"			// needed to unsubscribe 
+            "https://adserver.pandora.com/*?slot=FLEX_SKIP*",           					// needed for skips
+            "https://adserver.pandora.com/*?slot=FLEX_REPLAY*",         					// needed for skips
+            // "https://www.pandora.com/ping.txt*",                     					// needed for network connection detection
+            // "https://www.pandora.com/*analytics*",                   					// needed to load
+            // "https://www.pandora.com/*smartconversion*",             					// needed to load
+            "https://www.pandora.com/*/ad/startValueExchange*",         					// needed for replays
+            "https://www.pandora.com/*/ad/useReplayReward*",            					// needed for replays
+            "https://www.pandora.com/*/ad/useSkipReward*",              					// needed for skips,
+            "https://www.pandora.com/*/adsCommon-index-js*",            					// needed to load
+			"https://www.pandora.com/*/ads.json",											// needed to bypass ad-blocker check
+            //"https://www.pandora.com/*/c_*",                          					// needed to load (?)
+            //"https://www.pandora.com/*/d_*",                          					// needed to load (?)
+            "https://www.pandora.com/*/d_adsCommon-index-js*",          					// needed to load
+            "https://www.pandora.com/*/d_audio-ads*",                   					// needed to load
+            "https://www.pandora.com/*/d_ads-common*",                  					// needed to load
+            "https://www.pandora.com/*/d_display-ads*",                 					// needed to load
+            "https://www.pandora.com/*/d_video-ads*",                   					// needed for skips
+			"https://www.pandora.com/static/ads/omsdk-v1_3/omweb-video-v1_3/omweb-v1-m.js",	// needed for playback
+			"https://www.youtube.com/service_ajax?name=signalServiceEndpoint*",				// needed to switch account
+			"https://www.youtube.com/service_ajax?name=getAccountsListEndpoint*",			// needed to switch account
+			"https://www.youtube.com/service_ajax?name=subscribeEndpoint",					// needed to subscribe 
+			"https://www.youtube.com/service_ajax?name=unsubscribeEndpoint"					// needed to unsubscribe 
         ];
 		
     (function init() {
