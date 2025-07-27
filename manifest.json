@@ -1,12 +1,22 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Pandora - Still Here",
-  "version": "0.2",
-  "background": {"scripts": ["requestBlocker.js"]},
-  "browser_action": {"default_icon": "icon.png"},
+  "version": "0.3",
+  "background": {"service_worker": "serviceWorker.js"},
+  "action": {"default_icon": "icon.png"},
   "content_scripts": [
 	{"matches": ["https://www.pandora.com/*"], "js": ["contentPandora.js"]},
 	{"matches": ["https://www.youtube.com/*"], "js": ["contentYouTube.js"]}
   ],
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>", "tabs", "webNavigation"]
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "declarative_net_request": {
+    "rule_resources": [
+	  {"id": "rulesCommonBlock", "enabled": true, "path": "rulesCommonBlock.json"},
+	  {"id": "rulesGoogleBlock", "enabled": true, "path": "rulesGoogleBlock.json"},
+	  {"id": "rulesPandoraAllow", "enabled": true, "path": "rulesPandoraAllow.json"},
+	  {"id": "rulesPandoraBlock", "enabled": true, "path": "rulesPandoraBlock.json"},
+      {"id": "rulesYouTubeAllow", "enabled": true, "path": "rulesYouTubeAllow.json"},	  
+	  {"id": "rulesYouTubeBlock", "enabled": true, "path": "rulesYouTubeBlock.json"}
+    ]
+  }
 }

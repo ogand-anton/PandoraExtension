@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "http://adserver.pandora.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://adserver.pandora.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+	}
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://stats.pandora.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+	}
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*ads*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*brokenAd*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*getAdList*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*.mp4",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*mediaserverPublicRedirect*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*radioAdEmbedGPT*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*registerImpression*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*smart_launch_hooks_android*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/ad/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  }
+]

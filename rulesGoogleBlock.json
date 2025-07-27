@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://tpc.googlesyndication.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.google.com/ads*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.google.com/pagead/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.googleadservices.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.google-analytics.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.googletagmanager.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://www.googletagservices.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  }
+]

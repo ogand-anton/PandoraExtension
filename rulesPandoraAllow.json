@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://adserver.pandora.com/*slot=FLEX_SKIP*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://adserver.pandora.com/*slot=FLEX_REPLAY*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/ad/startValueExchange*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/ad/useReplayReward*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/ad/useSkipReward*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/adsCommon-index-js*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/ads.json",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/d_adsCommon-index-js*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/d_audio-ads*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/d_ads-common*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/d_display-ads*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/*/d_video-ads*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "https://www.pandora.com/static/ads/omsdk-v1_3/omweb-video-v1_3/omweb-v1-m.js",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  }
+]

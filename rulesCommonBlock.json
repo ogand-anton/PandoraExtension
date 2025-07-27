@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "http://www.dianomi.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://ad.doubleclick.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://assets.adobedtm.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://bat.bing.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://beacon.krxd.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://*.cloudfront.net/v4/bugsnag.min.js",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://cache-ssl.celtra.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://cdn.krxd.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://connect.facebook.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://delivery-cdn-cf.adswizz.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://doubleclick.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://googleads.g.doubleclick.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://*.googlesyndication.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://imasdk.googleapis.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://lt500.tritondigital.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://match.adsrvr.org/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://pixel.adsafeprotected.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://player.ooyala.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://s.adroll.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://s0.2mdn.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://sb.scorecardresearch.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://securepubads.g.doubleclick.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://serve.truex.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 24,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://stags.bluekai.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://static.adsafeprotected.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 26,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://static.doubleclick.net/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  },
+  {
+    "id": 27,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "https://synchrobox.adswizz.com/*",
+      "resourceTypes": ["csp_report","font","image","main_frame","media","script","stylesheet","sub_frame","object","other","ping","webbundle","websocket","webtransport","xmlhttprequest"]
+    }
+  }
+]
